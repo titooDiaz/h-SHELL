@@ -1,9 +1,13 @@
 import sys
 from commands import create_folder
 
+from commands import create_folder, generate_project
+
 COMMANDS = {
     "create-folder": create_folder,
+    "generate-project": generate_project,
 }
+
 
 def run():
     if len(sys.argv) < 2:
