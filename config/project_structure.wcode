@@ -1,0 +1,5 @@
+[structure]
+folder1 = src/
+folder2 = docs/
+file1 = README.md = {readme_text}
+file2 = .gitignore = *.pyc\n__pycache__/

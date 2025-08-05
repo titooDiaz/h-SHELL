@@ -1,15 +1,9 @@
 import sys
-from commands import create_folder
-
-from commands import create_folder, generate_project
-
-COMMANDS = {
-    "create-folder": create_folder,
-    "generate-project": generate_project,
-}
-
+from core.command_loader import get_command_aliases
 
 def run():
+    command_map = get_command_aliases()
+
     if len(sys.argv) < 2:
         print("Usage: python main.py <command> [args]")
         return
@@ -17,8 +11,8 @@ def run():
     command = sys.argv[1]
     args = sys.argv[2:]
 
-    if command not in COMMANDS:
+    if command not in command_map:
         print(f"Unknown command: {command}")
         return
 
-    COMMANDS[command].run(args)
+    command_map[command].run(args)
