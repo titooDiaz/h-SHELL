@@ -1,2 +1,5 @@
 commands/__pycache__
 __pycache__
+
+# ignore ghost_display
+ghost_display/frames
