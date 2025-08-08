@@ -4,8 +4,8 @@ from datetime import datetime
 from shutil import get_terminal_size
 
 FRAMES_FOLDER = "frames"
-VERSION_FILE = "../config/version.wcode"
-FRAME_DELAY = 0.05
+VERSION_FILE = "./config/version.wcode"
+FRAME_DELAY = 0.02
 
 # ASCII art logo for h-SHELL
 ASCII_LOGO = [
@@ -35,6 +35,7 @@ def load_version():
         with open(VERSION_FILE, "r") as f:
             return f.read().strip()
     except FileNotFoundError:
+        print(FileNotFoundError)
         return "v?.?.?"
 
 def load_frames():

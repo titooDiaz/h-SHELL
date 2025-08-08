@@ -1,7 +1,7 @@
 import cv2
 import os
 
-ASCII_CHARS = "█▓▒░ ."
+ASCII_CHARS = "█▓▒░ "
 
 def resize_frame(frame, width):
     height, original_width = frame.shape

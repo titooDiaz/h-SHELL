@@ -4,3 +4,4 @@ readme_text = Welcome to {project_name} by {owner}
 
 [commands]
 generate-project = np
+version = version

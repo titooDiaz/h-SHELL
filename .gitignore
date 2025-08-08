@@ -3,3 +3,4 @@ __pycache__
 
 # ignore ghost_display
 ghost_display/frames
+frames
